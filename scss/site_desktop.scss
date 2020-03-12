@@ -1,0 +1,223 @@
+// main stylesheet
+
+
+* {
+	box-sizing: border-box;
+}
+
+// fonts, colors
+@import '_variables.scss';
+
+
+p{
+	//16px
+	font-size: 100%;
+}
+
+h1{
+	//63px
+	font-size: 393.75%;
+}
+
+h2{
+	//43px
+	font-size: 268.75%;
+}
+
+h3{
+	//25px
+	font-size: 156.25%;
+}
+
+body{
+	position: relative;
+	&.noScroll{
+		position: fixed;
+		width: 100%;
+	}
+}
+
+
+//mobile nav and burger hide by default
+.mobile-nav, .burger{
+	display: none;
+}
+
+a{
+	text-decoration: none!important;
+}
+
+
+// navigation header & footer-----------
+
+header{
+	position: relative;
+
+	.logo img{
+		position: absolute;
+    	left: 30px;
+		top: 30px;
+		transition: 0.3s ease-in-out;
+		&.hide{
+			opacity: 0;
+		}
+		&:hover{
+			transition: 0.3s ease-in-out;
+			transform: scale(1.2);
+		}
+	}
+
+	.desktop-pages{
+		position: relative;
+		display: flex;
+		align-items: center;
+		text-transform: uppercase;
+		margin-right: 50vw;
+		justify-content: flex-end;
+		a{
+			position: absolute;
+			color: $lightPurple;
+			top: 41px;
+			&:first-child{
+				left: 40vw;
+			}
+			&:last-child{
+				left: 43vw;
+			}
+		}
+		a:last-child{
+			margin-left: 30px;
+		}
+	}
+
+}
+
+
+/* Underline From Center */
+.hvr-underline-from-center {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	position: relative;
+	overflow: hidden;
+}
+.hvr-underline-from-center:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 51%;
+	right: 51%;
+	bottom: 0;
+	background: $lightPurple;
+	height: 4px;
+	-webkit-transition-property: left, right;
+	transition-property: left, right;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+	left: 0;
+	right: 0;
+}
+
+
+
+//FONT SIZE for nav/pages
+.desktop-pages, .mobile-nav, .sidebar, footer{
+	@extend %bebas-bold;
+	font-size: 125%;
+	letter-spacing: 0.03em;
+}
+
+//RESUME sidebar
+.sidebar{
+	transform: rotate(-90deg);
+	position: absolute;
+	top: 45vh;
+	left: 30px;
+	a{
+		color: $pinkishPurple;
+		&:before{
+			content: url(../assets/img/sidebar-arrow.svg);
+			transform: rotate(90deg);
+			position: absolute;
+			left: -92px;
+			top: -55px;
+			transition: .3s ease-in-out;
+		}
+		&:hover{
+			&:before{
+				transition: .3s ease-in-out;
+				left: -82px;
+			}
+		}
+	}
+}
+
+footer{
+	position:  absolute;
+	bottom: 31px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+
+	.footer-arrow{
+		padding-left: 12%;
+		max-width: 33vw;
+		height: 100%;
+		object-fit: cover;
+		object-position: right;
+		margin-right: 1%;
+		transition: 0.3s ease-in-out;
+	}
+
+	.contact{
+		color: $pinkishPurple;	
+	}
+
+	.social{
+		position: absolute;
+		display: flex;
+		right: 33px;
+		i{
+			color: #fff;
+		}
+		.github, .insta{
+			margin-left: 18px;
+		}
+		&:hover{
+			&::before{
+				content: 'stalk me here';
+				color: #fff;
+				font-size: 18px;
+				position: absolute;
+				top: -32px;
+				font-family: 'bebas-book';
+			}
+		}
+		a:hover{
+
+		}
+		
+	}
+
+}
+
+
+// home page------------
+
+.leftSide{
+	background: #fff;
+	height: 100vh;
+}
+
+.rightSide{
+	background-position: right;
+	background-repeat: no-repeat;
+	background-image: url('../assets/img/big-logo.svg'), linear-gradient(#ADB9DE, #4509A7);
+	height: 100vh;
+}

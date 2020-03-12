@@ -1,0 +1,96 @@
+// COLORS ------------------------------------------------------------------------
+
+$periwinkle: #ADB9DE;
+$neonPurple: #4509A7;
+$pinkishPurple: #9885BD;
+$lightPurple: #7572B1;
+
+
+// FONTS --------------------------------------------------------------------------
+@import url(http://allfont.net/allfont.css?fonts=bodoni);
+
+
+%bodoni-reg{
+	font-family: 'Bodoni', arial;
+}
+
+%bodoni-dirt{
+	font-family: 'Bodoni-Dirt';
+}
+
+%bodoni-sharp{
+	font-family: 'Bodoni-Sharp';
+}
+
+%bebas-bold{
+	font-family: 'bebas-bold';
+}
+
+%bebas-reg{
+	font-family: 'bebas-reg';
+}
+
+%bebas-light{
+	font-family: 'bebas-light';
+}
+
+%bebas-book{
+	font-family: 'bebas-book';
+}
+
+
+@font-face {
+	font-family: 'Bodoni-Dirt';
+	src: url('../assets/fonts/BodoniFragileDirt.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+@font-face {
+	font-family: 'Bodoni-Sharp';
+	src: url('../assets/fonts/BodoniFragileSharp.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+@font-face {
+	font-family: 'bebas-bold';
+	src: url('../assets/fonts/BebasNeue-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+@font-face {
+	font-family: 'bebas-reg';
+	src: url('../assets/fonts/BebasNeue-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+@font-face {
+	font-family: 'bebas-light';
+	src: url('../assets/fonts/BebasNeue-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+@font-face {
+	font-family: 'bebas-book';
+	src: url('../assets/fonts/BebasNeue-Book.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+  

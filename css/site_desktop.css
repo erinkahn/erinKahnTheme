@@ -1,0 +1,267 @@
+@import url(http://allfont.net/allfont.css?fonts=bodoni);
+* {
+  box-sizing: border-box;
+}
+
+.desktop-pages, .mobile-nav, .sidebar, footer {
+  font-family: 'bebas-bold';
+}
+
+@font-face {
+  font-family: 'Bodoni-Dirt';
+  src: url("../assets/fonts/BodoniFragileDirt.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bodoni-Sharp';
+  src: url("../assets/fonts/BodoniFragileSharp.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bebas-bold';
+  src: url("../assets/fonts/BebasNeue-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bebas-reg';
+  src: url("../assets/fonts/BebasNeue-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bebas-light';
+  src: url("../assets/fonts/BebasNeue-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bebas-book';
+  src: url("../assets/fonts/BebasNeue-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+p {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 393.75%;
+}
+
+h2 {
+  font-size: 268.75%;
+}
+
+h3 {
+  font-size: 156.25%;
+}
+
+body {
+  position: relative;
+}
+
+body.noScroll {
+  position: fixed;
+  width: 100%;
+}
+
+.mobile-nav, .burger {
+  display: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+header {
+  position: relative;
+}
+
+header .logo img {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+header .logo img.hide {
+  opacity: 0;
+}
+
+header .logo img:hover {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+header .desktop-pages {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  margin-right: 50vw;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+}
+
+header .desktop-pages a {
+  position: absolute;
+  color: #7572B1;
+  top: 41px;
+}
+
+header .desktop-pages a:first-child {
+  left: 40vw;
+}
+
+header .desktop-pages a:last-child {
+  left: 43vw;
+}
+
+header .desktop-pages a:last-child {
+  margin-left: 30px;
+}
+
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #7572B1;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+.desktop-pages, .mobile-nav, .sidebar, footer {
+  font-size: 125%;
+  letter-spacing: 0.03em;
+}
+
+.sidebar {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  position: absolute;
+  top: 45vh;
+  left: 30px;
+}
+
+.sidebar a {
+  color: #9885BD;
+}
+
+.sidebar a:before {
+  content: url(../assets/img/sidebar-arrow.svg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+  left: -92px;
+  top: -55px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.sidebar a:hover:before {
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  left: -82px;
+}
+
+footer {
+  position: absolute;
+  bottom: 31px;
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+footer .footer-arrow {
+  padding-left: 12%;
+  max-width: 33vw;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
+  margin-right: 1%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+footer .contact {
+  color: #9885BD;
+}
+
+footer .social {
+  position: absolute;
+  display: -webkit-box;
+  display: flex;
+  right: 33px;
+}
+
+footer .social i {
+  color: #fff;
+}
+
+footer .social .github, footer .social .insta {
+  margin-left: 18px;
+}
+
+footer .social:hover::before {
+  content: 'stalk me here';
+  color: #fff;
+  font-size: 18px;
+  position: absolute;
+  top: -32px;
+  font-family: 'bebas-book';
+}
+
+.leftSide {
+  background: #fff;
+  height: 100vh;
+}
+
+.rightSide {
+  background-position: right;
+  background-repeat: no-repeat;
+  background-image: url("../assets/img/big-logo.svg"), -webkit-gradient(linear, left top, left bottom, from(#ADB9DE), to(#4509A7));
+  background-image: url("../assets/img/big-logo.svg"), linear-gradient(#ADB9DE, #4509A7);
+  height: 100vh;
+}
