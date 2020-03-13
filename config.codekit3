@@ -17,20 +17,20 @@
 		"oAP": "/.gitattributes",
 		"oF": 0
 		},
-	"/2019-portolio-mockup.xd": {
+	"/404.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/2019-portolio-mockup.xd",
+		"oAP": "/404.php",
 		"oF": 0
 		},
-	"/about.php": {
+	"/archive.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/about.php",
+		"oAP": "/archive.php",
 		"oF": 0
 		},
 	"/assets/fonts/BebasNeue-Bold.ttf": {
@@ -202,6 +202,14 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"/category.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/category.php",
+		"oF": 0
 		},
 	"/css/fontawesome-all.min.css": {
 		"aP": 1,
@@ -396,8 +404,8 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/css/vm_flex_strap-min.css",
-		"oF": 0,
-		"oS": 3
+		"oF": 1,
+		"oS": 1
 		},
 	"/favicon-96x96.png": {
 		"ft": 32768,
@@ -418,12 +426,28 @@
 		"oAP": "/footer.php",
 		"oF": 0
 		},
+	"/functions.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/functions.php",
+		"oF": 0
+		},
 	"/header.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/header.php",
+		"oF": 0
+		},
+	"/home.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/home.php",
 		"oF": 0
 		},
 	"/index.php": {
@@ -478,6 +502,41 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/page-about.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-about.php",
+		"oF": 0
+		},
+	"/page-work.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-work.php",
+		"oF": 0
+		},
+	"/page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page.php",
+		"oF": 0
+		},
+	"/screenshot.jpg": {
+		"ft": 16384,
+		"iS": 63465,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/screenshot.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/scss/_reset.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -530,13 +589,33 @@
 		"oS": 1,
 		"uL": 1
 		},
-	"/work.php": {
+	"/single.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/work.php",
+		"oAP": "/single.php",
 		"oF": 0
+		},
+	"/style-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style-min.css",
+		"oF": 0,
+		"oS": 3
 		}
 	},
 "hooks": [
@@ -545,7 +624,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 578150625.10480595,
-	"displayValue": "site2019",
+	"displayValue": "erinKahnTheme",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-confusedBaby",
 	"iconImageWasSetByUser": 0

@@ -216,7 +216,8 @@ footer{
 }
 
 .rightSide{
-	background-position: right;
+	background-position: center;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-image: url('../assets/img/big-logo.svg'), linear-gradient(#ADB9DE, #4509A7);
 	height: 100vh;

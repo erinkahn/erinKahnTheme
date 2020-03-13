@@ -1,4 +1,17 @@
-<?php require 'header.php'; ?>
+<?php 
+/**
+Template Name: Work
+**/
+
+$page_id = 'page work'; 
+$page_title = '';
+require 'header.php';
+?>
+
+<?php if ( have_posts() ) : 
+    while ( have_posts() ) : 
+    the_post(); 
+?>
 
 <div class="site-container workPage">
     <div class="flex-container" style="overflow-x: hidden;">
@@ -14,6 +27,8 @@
 </div>
 
 
-
+<?php 
+endwhile; 
+endif; ?>
 
 <?php require 'footer.php'; ?>

@@ -259,7 +259,8 @@ footer .social:hover::before {
 }
 
 .rightSide {
-  background-position: right;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../assets/img/big-logo.svg"), -webkit-gradient(linear, left top, left bottom, from(#ADB9DE), to(#4509A7));
   background-image: url("../assets/img/big-logo.svg"), linear-gradient(#ADB9DE, #4509A7);

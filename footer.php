@@ -1,6 +1,6 @@
 
 <footer>
-    <img class="footer-arrow" src="assets/img/footer-arrow.svg" alt="arrow">
+    <img class="footer-arrow" src="<?php bloginfo('template_url'); ?>/assets/img/footer-arrow.svg" alt="arrow">
 	<a class="contact" href="mailto:erinnicolekahn@gmail.com">Contact</a>
 
     <span class="social">
@@ -14,7 +14,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!--slick slider-->
-<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/slick.min.js"></script>
 
 <!--waypoints-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
@@ -23,7 +23,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
 <!--erin's code-->
-<script src="js/scripts-min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/scripts-min.js" type="text/javascript"></script>
 
 
 </body>
