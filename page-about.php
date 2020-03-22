@@ -8,9 +8,14 @@ $page_title = '';
 require 'header.php';
 ?>
 
+<?php if ( have_posts() ) : 
+    while ( have_posts() ) : 
+    the_post(); 
+?>
+
 <div class="site-container aboutPage">
     <div class="flex-container" style="overflow-x: hidden;">
-        <div class="row">
+        <div class="row flex">
             <div class="col-lg-6 leftSide">
 
            

@@ -8,10 +8,7 @@ $page_title = '';
 require 'header.php';
 ?>
 
-<?php if ( have_posts() ) : 
-    while ( have_posts() ) : 
-    the_post(); 
-?>
+
 
 <div class="site-container workPage">
     <div class="flex-container" style="overflow-x: hidden;">
@@ -25,6 +22,11 @@ require 'header.php';
         </div>
     </div>
 </div>
+
+<?php if ( have_posts() ) : 
+    while ( have_posts() ) : 
+    the_post(); 
+?>
 
 
 <?php 

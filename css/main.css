@@ -1,8 +1,4 @@
 @import url(http://allfont.net/allfont.css?fonts=bodoni);
-* {
-  box-sizing: border-box;
-}
-
 .desktop-pages, .mobile-nav, .sidebar, footer {
   font-family: 'bebas-bold';
 }
@@ -47,6 +43,10 @@
   src: url("../assets/fonts/BebasNeue-Book.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 p {
@@ -117,21 +117,24 @@ header .desktop-pages {
           justify-content: flex-end;
 }
 
-header .desktop-pages a {
+header .desktop-pages li {
   position: absolute;
-  color: #7572B1;
   top: 41px;
 }
 
-header .desktop-pages a:first-child {
+header .desktop-pages li:first-child {
   left: 40vw;
 }
 
-header .desktop-pages a:last-child {
+header .desktop-pages li:last-child {
   left: 43vw;
 }
 
-header .desktop-pages a:last-child {
+header .desktop-pages li a {
+  color: #7572B1;
+}
+
+header .desktop-pages li:last-child {
   margin-left: 30px;
 }
 
@@ -256,6 +259,7 @@ footer .social:hover::before {
 .leftSide {
   background: #fff;
   height: 100vh;
+  width: 50vw;
 }
 
 .rightSide {
@@ -265,4 +269,141 @@ footer .social:hover::before {
   background-image: url("../assets/img/big-logo.svg"), -webkit-gradient(linear, left top, left bottom, from(#ADB9DE), to(#4509A7));
   background-image: url("../assets/img/big-logo.svg"), linear-gradient(#ADB9DE, #4509A7);
   height: 100vh;
+  width: 50vw;
+}
+
+@media all and (max-width: 1199px) {
+  header .desktop-pages li:first-child {
+    left: 37vw;
+  }
+  header .desktop-pages li:last-child {
+    left: 41vw;
+  }
+}
+
+@media all and (max-width: 991px) {
+  header .desktop-pages {
+    margin-right: 3vw;
+  }
+  header .desktop-pages li:first-child {
+    left: auto;
+    right: 99px;
+  }
+  header .desktop-pages li:last-child {
+    left: auto;
+    right: 20px;
+  }
+  footer .contact {
+    position: relative;
+    color: #fff;
+    margin-left: 5%;
+  }
+  footer .contact:after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 137%;
+    width: 120px;
+    height: 1px;
+    background: white;
+  }
+  footer .footer-arrow {
+    display: none;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .desktop-pages, footer .contact, .sidebar, .desktop-pages a {
+    display: none;
+  }
+  .burger {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 31px;
+    padding: 6px;
+    top: 41px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+  .burger div {
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+    border-radius: 90px;
+    height: 3px;
+    right: 34px;
+    top: 41px;
+  }
+  .burger div:first-child {
+    width: 41px;
+    background: #4509A7;
+    margin-bottom: 9px;
+  }
+  .burger div:last-child {
+    width: 28px;
+    background: #9885BD;
+  }
+  .burger div.changeColor {
+    background: #fff;
+    -webkit-transform: rotate(49deg);
+            transform: rotate(49deg);
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+    width: 30px;
+  }
+  .burger div.changeColor:last-child {
+    -webkit-transition-delay: .4s;
+            transition-delay: .4s;
+    -webkit-transform: translateY(-12px) rotate(-49deg);
+            transform: translateY(-12px) rotate(-49deg);
+  }
+  .mobile-nav .container {
+    margin: 0 auto;
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    max-width: 700px;
+  }
+  .mobile-nav.showNav {
+    display: block;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ADB9DE), to(#4509A7));
+    background: linear-gradient(#ADB9DE, #4509A7);
+    height: 100vh;
+  }
+  .mobile-nav.showNav a {
+    font-size: 200%;
+    color: #fff;
+    position: absolute;
+  }
+  .mobile-nav.showNav a:first-child {
+    top: 23vh;
+    left: 10vw;
+  }
+  .mobile-nav.showNav a:nth-child(2) {
+    top: 30vh;
+    left: 28vw;
+  }
+  .mobile-nav.showNav a:nth-child(3) {
+    top: 38vh;
+    left: 47vw;
+  }
+  .mobile-nav.showNav a:last-child {
+    top: 46vh;
+    right: 11vw;
+  }
+}
+
+@media all and (max-width: 567px) {
+  footer {
+    bottom: 43px;
+  }
 }

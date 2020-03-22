@@ -1,14 +1,15 @@
 
 
+
 //col-lg   tablet landscape----------------------------------
 @media all and (max-width: 1199px){
 
   header{
       .desktop-pages{
-          a:first-child{
+          li:first-child{
             left: 37vw;
           }
-          a:last-child{
+         li:last-child{
             left: 41vw;
           }
       }
@@ -27,11 +28,11 @@
     header{
         .desktop-pages{
             margin-right: 3vw;
-            a:first-child{
+            li:first-child{
                 left: auto;
                 right: 99px;
             }
-            a:last-child{
+            li:last-child{
                 left: auto;
                 right: 20px;
             }

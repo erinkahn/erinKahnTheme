@@ -5,23 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Cache-control" content="no-cache"> <!--get rid of before going live-->
-    <meta http-equiv="Expires" content="-1"> <!--get rid of before going live-->
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/slick.min.css"/>
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/vm_flex_strap.min.css" type="text/css" media="all">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/fontawesome-all.min.css" type="text/css" media="all">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/liq6jgo.css">
     <link rel="stylesheet" href="https://use.typekit.net/gfx6lfe.css">
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/site_desktop.css" type="text/css" media="all">
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/site_mobile.css" type="text/css" media="all">
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/reset-min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/main.css" type="text/css" media="all">
     <link rel="icon" type="image/png" sizes="96x96" href="<?php bloginfo('template_url'); ?>/favicon-96x96.png">
 
     <title>Erin Kahn</title>
 
-    <?php wp_head(); ?> 
 </head>
 
 
@@ -31,8 +27,14 @@
     <a class="logo" href="index.php"><img class="logo-img" src="<?php bloginfo('template_url'); ?>/assets/img/logo.svg" alt="logo"></a>
 
     <span class="desktop-pages">
-        <a class="hvr-underline-from-center" href="about.php">About</a>
-        <a class="hvr-underline-from-center" href="work.php">Work</a>
+        <?php
+            wp_nav_menu( array(
+                'theme_location' => 'primary',
+                'container' => false,
+            ) );  
+        ?>
+        <!-- <a class="hvr-underline-from-center" href="about.php">About</a> -->
+        <!-- <a class="hvr-underline-from-center" href="work.php">Work</a> -->
     </span>
 
 

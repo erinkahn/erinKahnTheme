@@ -8,7 +8,7 @@
 
 <div class="site-container homePage">
     <div class="flex-container" style="overflow-x: hidden;">
-        <div class="row">
+        <div class="row flex">
             <div class="col-lg-6 leftSide">
 
             </div>
